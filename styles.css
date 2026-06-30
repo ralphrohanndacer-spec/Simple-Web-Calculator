@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#calculator{
+    height: 350px;
+    width: 400px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+#display{
+    font-size: 50px;
+    border-radius: 10px;
+    text-align: right;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: hsl(44, 4%, 8%);
+}
+#keys{
+    font-size: 50px;
+    padding: 20px;
+    gap: 5px;
+    display: grid;
+    grid-template-areas:"clear-btn clear-btn delete-btn delete-btn"
+                        "btn7 btn8 btn9 divide-btn"
+                        "btn4 btn5 btn6 multiply-btn"
+                        "btn1 btn2 btn3 subtract-btn"
+                        "btn0 btn-dot eval-btn plus-btn";                       
+}
+#display, #keys button{
+    color: hsl(215, 15%, 92%);
+}
+#keys button{
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#keys button:hover{
+    cursor: pointer;
+}
+#clear-btn, #delete-btn, #plus-btn, 
+#subtract-btn, #multiply-btn, #divide-btn{
+    background-color: hsl(223, 20%, 13%);
+}
+#clear-btn:hover, #delete-btn:hover, #plus-btn:hover, 
+#subtract-btn:hover, #multiply-btn:hover, #divide-btn:hover{
+    background-color: hsl(223, 20%, 23%);
+}
+#clear-btn:active, #delete-btn:active, #plus-btn:active, 
+#subtract-btn:active, #multiply-btn:active, #divide-btn:active{
+    background-color: hsl(223, 20%, 30%);
+}
+#btn7, #btn8, #btn9, #btn4, #btn5, 
+#btn6, #btn1, #btn2, #btn3, #btn0, #btn-dot{
+    background-color: hsl(210, 4%, 17%);
+}
+#btn7:hover, #btn8:hover, #btn9:hover, #btn4:hover, #btn5:hover, 
+#btn6:hover, #btn1:hover, #btn2:hover, #btn3:hover, #btn0:hover, #btn-dot:hover{
+    background-color: hsl(210, 4%, 27%);
+}
+#btn7:active, #btn8:active, #btn9:active, #btn4:active, #btn5:active, 
+#btn6:active, #btn1:active, #btn2:active, #btn3:active, #btn0:active, #btn-dot:active{
+    background-color: hsl(210, 4%, 34%);
+}
+#eval-btn:hover{
+    background-color: hsl(220, 78%, 70%)
+}
+#eval-btn:active{
+    background-color: hsl(220, 78%, 75%)
+}
+#clear-btn{grid-area: clear-btn;}
+#delete-btn{grid-area: delete-btn}
+#btn7{grid-area: btn7;}
+#btn8{grid-area: btn8;}
+#btn9{grid-area: btn9;}
+#btn4{grid-area: btn4;}
+#btn5{grid-area: btn5;}
+#btn6{grid-area: btn6;}
+#btn1{grid-area: btn1;}
+#btn2{grid-area: btn2;}
+#btn3{grid-area: btn3;}
+#btn0{grid-area: btn0;}
+#btn-dot{grid-area: btn-dot;}
+#plus-btn{grid-area: plus-btn;}
+#subtract-btn{grid-area: subtract-btn;}
+#multiply-btn{grid-area: multiply-btn;}
+#divide-btn{grid-area: divide-btn;}
+#eval-btn{
+    grid-area: eval-btn;
+    background-color: hsl(220, 78%, 77%)
+}
