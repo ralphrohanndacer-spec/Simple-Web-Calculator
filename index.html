@@ -8,25 +8,27 @@
     <div id="calculator">
       <input id="display" readonly />
       <div id="keys">
-        <button id="clear-btn" onclick="">AC</button>
-        <button id="delete-btn" onclick="">X</button>
-        <button id="btn7" onclick="">7</button>
-        <button id="btn8" onclick="">8</button>
-        <button id="btn9" onclick="">9</button>
-        <button id="btn4" onclick="">4</button>
-        <button id="btn5" onclick="">5</button>
-        <button id="btn6" onclick="">6</button>
-        <button id="btn1" onclick="">1</button>
-        <button id="btn2" onclick="">2</button>
-        <button id="btn3" onclick="">3</button>
-        <button id="btn0" onclick="">0</button>
-        <button id="btn-dot" onclick="">.</button>
-        <button id="plus-btn" onclick="">+</button>
-        <button id="subtract-btn" onclick="">-</button>
-        <button id="multiply-btn" onclick="">*</button>
-        <button id="divide-btn" onclick="">/</button>
-        <button id="eval-btn" onclick="">=</button>
+        <button id="clear-btn" onclick="clearDisplay()">AC</button>
+        <button id="delete-btn" onclick="removeChars()">X</button>
+        <button id="btn7" onclick="displayChars('7')">7</button>
+        <button id="btn8" onclick="displayChars('8')">8</button>
+        <button id="btn9" onclick="displayChars('9')">9</button>
+        <button id="btn4" onclick="displayChars('4')">4</button>
+        <button id="btn5" onclick="displayChars('5')">5</button>
+        <button id="btn6" onclick="displayChars('6')">6</button>
+        <button id="btn1" onclick="displayChars('1')">1</button>
+        <button id="btn2" onclick="displayChars('2')">2</button>
+        <button id="btn3" onclick="displayChars('3')">3</button>
+        <button id="btn0" onclick="displayChars('0')">0</button>
+        <button id="btn-dot" onclick="displayChars('.')">.</button>
+        <button id="plus-btn" onclick="displayChars('+')">+</button>
+        <button id="subtract-btn" onclick="displayChars('-')">-</button>
+        <button id="multiply-btn" onclick="displayChars('*')">*</button>
+        <button id="divide-btn" onclick="displayChars('/')">/</button>
+        <button id="eval-btn" onclick="evaluateDisplay()">=</button>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
